@@ -105,6 +105,36 @@ Each script provides a menu-driven interface to facilitate interactions, making 
 10. When executed, the manager also has a text based menu which gives the user to choose which action to execute from the given options. i.e view user cart, view inventory, add/ remove items from inventory, view user suggestions , and many more.
 
 
+## Docker 
+1. Build the Docker Image from the docker file<br>
+```sh 
+    Docker build -t icecreamparlor .
+```
+2. To Create the container<br>
+   ```sh
+   Docker run -h -it icecreamparlor
+   ```
+3. To ge docker container info from which we will copy Conainer ID<br>
+   ```sh
+   Docker Container ls
+   ```
+4. To open terminal in docker<br>
+   ```sh
+   Docker exec [Container ID] bash
+    ```
+5. Now , to initiate the program, first we run iceCream.py<br>
+   ```sh
+   python iceCream.py
+   ```
+6. To open user.py<br>
+   ```sh
+   python user.py
+   ```
+7. To open manage.py<br>
+   ```sh
+   python mange.py
+   ```
+   <br>
 # 💻 Test Steps 
 
 ### In user.py 
